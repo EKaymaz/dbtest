@@ -20,6 +20,13 @@ public class Manager {
     @Column(name = "dept")
     private String dept;
 
+    public Manager(int id, String firstName, String lastName, String dept) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dept = dept;
+    }
+
     public int getId() {
         return id;
     }
